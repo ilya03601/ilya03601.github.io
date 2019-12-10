@@ -1,0 +1,53 @@
+@import (reference) "./const.less";
+
+.u-Block () {
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    @media @media-mobile {
+        padding: 0 10px;
+    }
+}
+
+.u-Title () {
+    font-size: 35px;
+    font-weight: bold;
+    color: @c-white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media @media-mobile {
+        font-size: 25px;
+        margin-bottom: 35px;
+    }
+
+    span {
+        background: @c-red;
+        padding: 0 10px;
+    }
+}
+
+.u-SubTitle () {
+    font-size: 20px;
+    font-weight: bold;
+    color: @c-white;
+    margin-bottom: 15px;
+
+    @media @media-mobile {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    span {
+        position: relative;
+        left: -5px;
+        padding: 3px 5px;
+        background: @c-blue;
+
+        @media @media-mobile {
+            left: 0;
+        }
+    }
+}
